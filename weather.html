@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Search -->
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <!-- Main Weather -->
+        <div class="main">
+            <p class="location" id="location">Your Location: --</p>
+            <h1 id="weather">--</h1>
+            <div class="temp">
+                <span id="temperature">--°</span>
+            </div>
+
+            <div class="stats">
+                <div>💧 Humidity<br><b id="humidity">--%</b></div>
+                <div>🌬 Wind<br><b id="wind">--</b></div>
+                <div>🧭 Pressure<br><b id="pressure">-- hPa</b></div>
+            </div>
+        </div>
+
+        <!-- Sunrise & Sunset -->
+        <div class="card">
+            <h3>Sunrise & Sunset</h3>
+            <div class="sun">
+                <span id="sunrise">--:--</span>
+                <div class="arc"></div>
+                <span id="sunset">--:--</span>
+            </div>
+        </div>
+
+        <!-- Air Quality -->
+        <div class="card">
+            <h3>Air Quality</h3>
+            <p id="aqi">--</p>
+        </div>
+
+        <!-- Crop Suggestion -->
+        <div class="card">
+            <h3>Best Crop Suggestion 🌱</h3>
+            <p id="crop">--</p>
+        </div>
+
+        <!-- 7 Day Forecast -->
+        <div class="card">
+            <h3>7-Day Forecast</h3>
+            <div id="forecast" class="forecast"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
